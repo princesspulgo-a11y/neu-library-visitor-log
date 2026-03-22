@@ -1,43 +1,49 @@
 # 📚 NEU Library Visitor Log
 
 ## 🌐 Live Demo
-🔗 [https://neu-library-visitor-log.vercel.app/](https://neu-library-visitor-log.vercel.app/)
+🔗 (https://neu-library-visitor-log.vercel.app/)
 
 ---
 
 ## 📖 Description
-The **NEU Library Visitor Log** is a web-based system designed to digitally record and manage library visitors.  
-It replaces traditional manual logbooks with a faster, more organized, and accurate system for tracking visitor information.
+The **NEU Library Visitor Log** is a web-based system designed to digitally record and manage library visitors efficiently.  
+It replaces traditional manual logbooks with a **faster, more organized, and accurate** system for tracking visitor information.  
+
+This system allows library staff to monitor entries, track visitor activity, and generate a reliable digital record for security and reporting purposes.
+
+---
+
+## 🎯 Purpose
+- Eliminate manual logging and paper-based records  
+- Provide a searchable and organized database of visitors  
+- Improve visitor monitoring and library security  
+- Streamline visitor check-in and reporting process  
 
 ---
 
 ## 🔄 System Flow
-1. User opens the web application.  
-2. Visitor details are entered in the check-in form.  
-3. The system saves the data to the database.  
-4. Visitor records are displayed in a table.  
-5. Users can search and filter records.  
-6. Admins can manage users and visitor data (if applicable).  
+1. **Access:** User opens the web application via a browser.  
+2. **Visitor Check-in:** Visitor enters personal details (name, purpose, time) in the check-in form.  
+3. **Data Storage:** The system saves the information securely in the database.  
+4. **Display Logs:** All visitor records are displayed in a structured table for easy tracking.  
+5. **Search & Filter:** Users can search for specific visitors and filter records by date or category.  
+6. **User/Admin Management:** Admins can add, edit, or remove users, and manage visitor logs.  
+7. **Logout:** User/admin ends the session to secure the system.  
 
 ---
 
 ## ✨ Features
-- 📝 Visitor check-in form  
-- 📊 Display and track visitor logs  
-- 🔍 Search and filter records  
-- 👥 User/admin management  
-- 💻 Responsive design for desktop and mobile  
+- 📝 **Visitor Check-in Form:** Quickly log visitor details digitally  
+- 📊 **Visitor Logs Table:** View and track all visit records  
+- 🔍 **Search & Filter:** Easily find specific visitor information  
+- 👥 **User/Admin Management:** Manage access and system users  
+- 📅 **Date & Time Tracking:** Automatically records the date and time of each visit  
+- 💻 **Responsive Design:** Works on desktops, tablets, and mobile devices  
+- 🔒 **Secure Data Storage:** Keeps visitor information safe and organized  
 
 ---
 
 ## 🛠️ Technologies Used
-- Frontend: HTML, CSS, JavaScript  
-- Framework: (Add if using React / Next.js)  
-- Backend: (Add if applicable, e.g., Firebase, Node.js)  
-- Deployment: Vercel  
-
----
-
-## 📌 Notes
-- Ensure the live demo link works before submission.  
-- This project is for academic purposes.  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Supabase
+- **Deployment:** Vercel  
