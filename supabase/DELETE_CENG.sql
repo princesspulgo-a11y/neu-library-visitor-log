@@ -1,20 +1,19 @@
-
 -- DELETE CENG'S DATA
--- This will completely remove Wayne Andy from the system
+-- This will completely remove Ceng Corpez from the system
 -- Run these queries in order in Supabase SQL Editor
 
--- Step 1: Find Wayne's visitor_id (for verification)
+-- Step 1: Find Ceng's visitor_id (for verification)
 SELECT id, email, full_name, visitor_type, is_blocked
 FROM visitors
 WHERE email = 'ceng.corpez@neu.edu.ph';
 
--- Step 2: Delete all Wayne's visit logs
+-- Step 2: Delete all Ceng's visit logs
 DELETE FROM visit_logs
 WHERE visitor_id = (
   SELECT id FROM visitors WHERE email = 'ceng.corpez@neu.edu.ph'
 );
 
--- Step 3: Delete Wayne's visitor record
+-- Step 3: Delete Ceng's visitor record
 DELETE FROM visitors
 WHERE email = 'ceng.corpez@neu.edu.ph';
 
