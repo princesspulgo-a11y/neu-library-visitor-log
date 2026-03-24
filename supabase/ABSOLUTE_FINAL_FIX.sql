@@ -1,9 +1,6 @@
--- ============================================================================
 -- ABSOLUTE FINAL FIX - Remove Database Constraint
--- ============================================================================
 -- This constraint is blocking ALL users from signing in
 -- Run this NOW in Supabase SQL Editor
--- ============================================================================
 
 -- Remove ALL constraints related to duplicate sessions
 DROP TRIGGER IF EXISTS prevent_duplicate_active_sessions ON visit_logs CASCADE;
@@ -34,9 +31,7 @@ SET
   duration_minutes = EXTRACT(EPOCH FROM (NOW() - time_in)) / 60
 WHERE time_out IS NULL;
 
--- ============================================================================
 -- VERIFICATION
--- ============================================================================
 -- Should return 0 active sessions
 SELECT COUNT(*) as active_sessions FROM visit_logs WHERE time_out IS NULL;
 
@@ -46,10 +41,8 @@ FROM pg_indexes
 WHERE tablename = 'visit_logs' 
   AND indexdef LIKE '%time_out IS NULL%';
 
--- ============================================================================
 -- SUCCESS! Now the Smart Toggle will work:
 -- 1. Register → Time In
 -- 2. Sign In → Time Out + Time In
 -- 3. Sign In → Time Out + Time In
 -- Works forever, any device!
--- ============================================================================
