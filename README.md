@@ -26,9 +26,9 @@ This system allows library staff to monitor entries, track visitor activity, and
 2. **Visitor Check-in:** Visitor enters personal details (name, purpose, time) in the check-in form.  
 3. **Data Storage:** The system saves the information securely in the database.  
 4. **Display Logs:** All visitor records are displayed in a structured table for easy tracking.  
-5. **Search & Filter:** Users can search for specific visitors and filter records by date or category.  
+5. **Search & Filter:** Admins can search for specific visitors and filter records by date or category.  
 6. **User/Admin Management:** Admins can add, edit, or remove users, and manage visitor logs.  
-7. **Logout:** User/admin ends the session to secure the system.  
+7. **Logout:** Admin ends the session to secure the system.  
 
 ---
 
